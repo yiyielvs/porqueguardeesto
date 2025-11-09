@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memoria y fotografía cotidiana — ACTIO</title>
+
+  <!-- Fuentes -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Memoria y fotografía cotidiana: el valor narrativo de las fotos personales y su reinterpretación con el paso del tiempo. Proyecto: Fotos que no tiramos.">
+
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(180deg,#f8f6f3,#fffefc);
+      color:#222;
+      padding:32px;
+    }
+
+    .wrap{
+      max-width:1100px;
+      margin:0 auto;
+      background:#fffdfb;
+      border-radius:16px;
+      box-shadow:0 20px 40px rgba(0,0,0,0.08);
+      padding:28px;
+      border:1px solid rgba(0,0,0,0.04);
+      position:relative;
+      overflow:hidden;
+    }
+
+    header{
+      display:flex;
+      gap:18px;
+      align-items:center;
+      margin-bottom:20px;
+    }
+    .logo{
+      width:120px;
+      height:120px;
+      background:#fdeef0;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.06);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-family:"Amatic SC", cursive;
+      font-size:26px;
+      color:#b33a4a;
+      border:1px dashed rgba(0,0,0,0.06);
+      text-align:center;
+    }
+
+    .head-info h1{
+      font-family:"Playfair Display", serif;
+      font-size:28px;
+      margin-bottom:6px;
+    }
+
+    .main{
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:28px;
+      margin-top:22px;
+    }
+
+    .intro{
+      background:#fffefc;
+      padding:18px;
+      border-radius:10px;
+      border:1px solid rgba(0,0,0,0.04);
+      margin-bottom:18px;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:14px;
+      margin-top:12px;
+    }
+    .card{
+      background:#fff;
+      border-radius:10px;
+      padding:10px;
+      box-shadow:0 6px 12px rgba(0,0,0,0.04);
+      border:1px solid rgba(0,0,0,0.03);
+    }
+    .card img{
+      width:100%;
+      height:160px;
+      object-fit:cover;
+      border-radius:8px;
+      margin-bottom:8px;
+    }
+    .caption{
+      font-size:13px;
+      font-weight:600;
+    }
+    .subcap{
+      font-size:12px;
+      color:#666;
+      margin-top:6px;
+    }
+
+    aside{
+      background:#fffaf2;
+      padding:16px;
+      border-radius:12px;
+      border:1px solid rgba(0,0,0,0.03);
+      height:fit-content;
+    }
+
+    .video-wrap{
+      width:100%;
+      aspect-ratio:16/9;
+      background:#000;
+      border-radius:10px;
+      overflow:hidden;
+      margin-bottom:12px;
+    }
+    .video-wrap iframe{
+      width:100%;
+      height:100%;
+      border:0;
+    }
+
+    footer{
+      margin-top:20px;
+      padding-top:18px;
+      border-top:1px dashed rgba(0,0,0,0.04);
+      display:flex;
+      justify-content:space-between;
+      font-size:13px;
+      color:#666;
+    }
+
+    @media (max-width:980px){
+      .main{ grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">fotos<br>que no<br>tiramos</div>
+      <div class="head-info">
+        <h1>Memoria y fotografía cotidiana</h1>
+        <p>El valor narrativo de las fotos personales y su reinterpretación con el paso del tiempo</p>
+      </div>
+    </header>
+
+    <div class="main">
+      <section class="content">
+        <article class="intro">
+          <h2 style="font-family:'Playfair Display',serif;margin-bottom:8px;">¿Por qué guardé esto?</h2>
+          <p>
+            Un proyecto que recupera fotografías personales—imperfectas, cotidianas—y las revisita para entender cómo cambia su significado emocional con el paso del tiempo.
+          </p>
+        </article>
+
+        <h3 style="font-family:'Playfair Display',serif;margin-bottom:8px;">Galería narrativa</h3>
+
+        <!-- ✅ GALERÍA ACTUALIZADA CON LAS 10 FOTOS DEL ÍNDICE -->
+        <div class="gallery">
+
+          <div class="card">
+            <img src="images/mi-hombro-raro.jpg" alt="Mi hombro raro">
+            <div class="caption">Mi hombro raro</div>
+            <div class="subcap">Una foto que guarda tensiones familiares y memorias corporales.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/toda-era-rosa.jpg" alt="Toda era rosa">
+            <div class="caption">Toda era rosa</div>
+            <div class="subcap">Recordar un instante desde otra edad lo vuelve más suave… o más duro.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/odio-el-pastel.jpg" alt="Odio el pastel">
+            <div class="caption">Odio el pastel</div>
+            <div class="subcap">Un gesto capturado que se convierte en símbolo con los años.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/no-me-gusta-marchar.jpg" alt="No me gusta marchar">
+            <div class="caption">No me gusta marchar</div>
+            <div class="subcap">Una declaración pequeña que cambia según el contexto.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/no-nos-parecemos.jpg" alt="No nos parecemos">
+            <div class="caption">No nos parecemos</div>
+            <div class="subcap">Identidad familiar y las comparaciones que acompañan la infancia.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/cabeza-de-tazon.jpg" alt="Cabeza de tazón">
+            <div class="caption">Cabeza de tazón</div>
+            <div class="subcap">Pequeñas rutinas de cuidado que se recuerdan diferente al crecer.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/debi-quedarme-en-casa.jpg" alt="Debí quedarme en casa">
+            <div class="caption">Debí quedarme en casa</div>
+            <div class="subcap">La foto que revive una sensación exacta del pasado.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/lentes-feos.jpg" alt="Lentes feos">
+            <div class="caption">Lentes feos</div>
+            <div class="subcap">Una imagen que antes daba pena, ahora da ternura.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/me-veo-gorda.jpg" alt="Me veo gorda">
+            <div class="caption">Me veo gorda</div>
+            <div class="subcap">Una fotografía que abre diálogos sobre cuerpo y mirada.</div>
+          </div>
+
+          <div class="card">
+            <img src="images/yo-no-soy-ella.jpg" alt="Yo no soy ella">
+            <div class="caption">Yo no soy ella</div>
+            <div class="subcap">Distancias entre cómo nos ven y cómo nos vemos.</div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ASIDE: VIDEO -->
+      <aside>
+        <div class="video-wrap">
+          <!-- ✅ Reemplaza YOUTUBE_ID por la ID de tu video -->
+          <iframe src="https://youtu.be/1SnX2i2Q6XI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+        <p style="font-size:13px;color:#555;">
+        
+      </aside>
+    </div>
+
+    <footer>
+      <span>Proyecto: Sandra Muñiz</span>
+      <span>Fecha: 2025</span>
+    </footer>
+  </div>
+</body>
+</html>
